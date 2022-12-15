@@ -1,0 +1,383 @@
+@import "nullstyle.scss";
+@import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+@font-face {
+    font-family: "DrukWide";
+    src: url("../fonts/DrukWide/DrukWide-Medium-Trial.otf")
+}
+
+
+
+.wrapper {
+    overflow: hidden;
+    background: #1f2326;
+    font-family: 'DrukWide';
+    position: relative;
+
+}
+
+.circle {
+    position: absolute;
+	width: 50%;
+	border-radius: 50%;
+	background: #cecece;
+   
+}
+.circle span{
+    padding: 50% 0%;
+	display: block;
+}
+
+.circle:nth-child(1) {
+    width: 71.5%;
+    left: -12%;
+    top: -30.5%;
+    background: #FF4656;
+}
+
+.circle:nth-child(2) {
+    width: 1.5%;
+    left: 91.5%;
+    top: 3.1%;
+    background: #FF4656;
+}
+
+.circle:nth-child(3) {
+    width: 8.6%;
+    left: 88%;
+    top: 8%;
+
+    background: #EFEFEF;
+}
+
+.circle:nth-child(4) {
+    width: 3%;
+    left: 95%;
+    top: 20%;
+
+    background: #505155;
+}
+
+.circle:nth-child(5) {
+    width: 2%;
+    left: 0.36%;
+    top: 90%;
+
+    background: #505155;
+}
+
+.circle:nth-child(6) {
+    width: 15%;
+    left: 5%;
+    top: 91%;
+
+    background: #EFEFEF;
+}
+
+.circle:nth-child(7) {
+    width: 46.6%;
+    left: 65%;
+    top: 60%;
+
+    background: #292C31;
+}
+
+
+.main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    // overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transform: translate(-50%,-50%);
+        width: 86%;height: 73%;
+        background: #F5F4EF;
+        border-radius: 32px;
+
+
+    &__header {}
+    
+    &__content {flex: 1 1 auto;}
+    
+    &__footer {}
+    }
+    .header {
+        border-radius: 32px 32px 0px 0px;
+        overflow: hidden;
+    width: 100%;
+    height: 7.6%;
+    position: relative;
+    background: #1F2326;
+    &__container{
+        
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: 1% 3%;
+    }
+    &__logo {display: flex; height: 100%; width: 10%; margin-right: 5%; justify-content: space-between; align-items: center;}
+    &__logo img{ height: 85%; width: 85%; object-fit: contain;}
+    &__one {}
+    
+    &__two {}
+    
+    &__three {}
+    
+    &__menu {
+        font-family: Montserrat;
+        font-weight: 700;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        ul{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        font-size: calc(2px + 14 * (100vw / 3090));
+        text-align: center;
+        color: white;
+        }
+        li{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            img{
+
+                width: calc(2px + 4 * (100vw / 3090));
+                height: calc(2px + 4 * (100vw / 3090));
+                position: absolute;
+                top:40%;
+                left: 120%;
+            }
+        }
+    }
+    
+    &__profile {
+        width: 35%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    
+    &__icon {
+        border-radius: 50%;
+        width: 5%;
+        margin-right: 5%;
+        overflow: hidden;
+        span{
+            height: 0;
+            padding: 50% 0%;
+	        display: block;
+            img{
+                margin: -50% 0%;
+                width: 100%; object-fit: cover;
+            }
+        }
+    }
+    
+    &__name {
+        color: white;
+        font-size: calc(4px + 12 * (100vw / 3090));
+        position: relative;
+        img{
+            width: calc(2px + 4 * (100vw / 3090));
+            height: calc(2px + 4 * (100vw / 3090));
+            position: absolute;
+            top:40%;
+            left: 110%;
+        }
+    }
+    }
+    .content {
+        position: relative;
+        background-image: url(../img/background1.jpg);
+        background-repeat: no-repeat;
+        background-position: left;
+        background-size: cover;
+        
+        &__container{
+            width: 100%;
+            height: 100%;
+                    border-radius: 32px;
+
+            // background: rgba($color: #FF4656, $alpha: 0.8);
+            padding-top: 1.5%;
+            padding-left: 3.5%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            left: -10%;
+
+
+        }
+        &__shirma{
+            width: 100%;
+            height: 100%;
+            background: rgba($color: #FF4656, $alpha: 0.8);
+            
+
+
+        }
+        &__container1{
+            width: 115%;
+            position: absolute;
+            padding-left: 3.5%;
+             padding-top: 4.2%;
+            top: 0;
+            left: 25%;
+            display: flex;
+        }
+        &__top {
+            display: flex;
+            width: 115%;
+            height: 73.3%;
+            padding-left: 3.5%;
+            padding-top: 4.2%;
+            // border: 10px solid black;
+
+
+            h1{
+                font-size: calc(6px + 115 * (100vw / 3090));
+                // height: calc(6px + 115 * (100vw / 3090));
+                text-transform: uppercase;
+                text-align: center;
+                letter-spacing: 0.1em;
+                transform: rotate(90deg);
+                transform-origin: top left;
+                margin-left: 15%;
+                color: transparent;
+                    -webkit-text-stroke: 1px white;
+        
+            }
+        }
+        &__character {
+            margin-right: 5%;
+        }
+        
+            .character {
+                width: 15%;
+                position: relative;
+
+            &__container{
+                border: 2px solid #1F2326;
+                font-size: 50px;
+                color: #000;
+                height: 100%;
+                width: 100%;
+                clip-path: 
+                polygon(
+                  0% 2%,     /* верхняя левая */
+                  4% 0%,     /* верхняя левая */
+                  100% 0%,    /* верхняя правая */
+                  100% 100%,  /* нижняя правая */
+                  0% 100%   /* нижняя левая */
+                );
+                background-color: #1F2326;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: top;
+                   }
+            }
+          
+            &__container2{
+                top: 0;
+                left: 0;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+
+                h2,h3{
+                    position: absolute;
+                    text-transform: uppercase;
+                    text-align: center;
+                    letter-spacing: 0.1em;
+                    transform: rotate(90deg);
+                    transform-origin: top left;
+                    color: transparent;
+                        -webkit-text-stroke: 1px white;
+            
+                }
+                h2{
+                    font-size: calc(3px + 58 * (100vw / 3090));
+                    height: calc(3px + 58 * (100vw / 3090));
+                    top: 5%;
+                    left: 12%;
+                }
+                h3{
+                    -webkit-text-stroke: 0px white;
+                    color: #FF4656;
+                    font-size: calc(0.5px + 19 * (100vw / 3090));
+                    height: calc(0.5px + 19 * (100vw / 3090));
+                    top: 5%;
+                    left: 17%;
+                }
+            }
+
+            .white{
+                background-color: white;
+            }
+            &__top{}
+            &__title { }
+            &__subtitle {}
+            &__bottom {
+                position: absolute;
+                top: 90%;
+                left: 10%;
+                padding: 3% 0% 3% 9.5%;
+                align-items: center;
+                justify-content: space-between;
+                display: flex;
+                width: 100%;
+                background: #1F2326;
+                height: 13%;
+                border: 2px solid #F8F8F8;
+
+                
+            }        
+            &__icon {
+                width: 25%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-right: 12%;
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: contain;
+                }
+            }
+            &__icon:last-child{
+                padding-right: 12%;
+
+            }
+            .black{
+                -webkit-text-stroke: 1.5px black;
+
+            }
+            }
+          
+            
+    }
+    .footer {
+        width: 100%;
+       height: 7.6%;
+    }
+    
+
+ #one{
+    img{
+        width: 70%;
+    }
+ }
+ .two{
+    background-color: white;
+ }
